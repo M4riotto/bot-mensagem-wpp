@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 # Carregar a planilha com os dados
-dados = pd.read_excel("./teste.xlsx")  # Altere para o caminho da sua planilha
+dados = pd.read_excel("./Lista de entrada Encontro de Empresários..xlsx")  # Altere para o caminho da sua planilha
 
 # Caminho da imagem que você quer enviar
 caminho_imagem = r"C:\Users\vitor\Downloads\imagem-teste.png"  # Use 'r' para lidar corretamente com caminhos no Windows
@@ -29,31 +29,21 @@ for index, row in dados.iterrows():
 
         # Confirmar o envio da mensagem (pressionando Enter)
         navegador.find_element(By.XPATH, "//span[@data-icon='send']").click()
-        sleep(1)
+        sleep(2)
 
         # 1. Clique no ícone de anexar (mais) para abrir o menu de opções
-        anexo = navegador.find_element(By.XPATH, "//span[@data-icon='plus']")
-        anexo.click()
-        sleep(1)  # Aguarde o menu abrir
+    #     anexo = navegador.find_element(By.XPATH, "//span[@data-icon='plus']")
+    #     anexo.click()
+    #     sleep(1)  # Aguarde o menu abrir
 
-        # # 2. Selecionar o botão de fotos e vídeos
-        # botao_fotos = navegador.find_element(By.XPATH, "//li[@data-animate-dropdown-item='true']//span[text()='Fotos e vídeos']")
-        # botao_fotos.click()
-        # sleep(2)  # Espera o seletor de arquivos abrir
-
-       # 3. Localizar o campo de upload e enviar a imagem
-        input_file = navegador.find_element(By.XPATH, "//input[@accept='image/*,video/mp4,video/3gpp,video/quicktime']")
-        input_file.send_keys(caminho_imagem)
-        sleep(2)  # Espera o upload da imagem
-
-        # Adicionar legenda na imagem (se necessário)
-        # legenda = navegador.find_element(By.XPATH, "//div[@data-testid='media-caption-text']")
-        # legenda.send_keys(mensagem)
-        # sleep(1)
-
+    #    # 3. Localizar o campo de upload e enviar a imagem
+    #     input_file = navegador.find_element(By.XPATH, "//input[@accept='image/*,video/mp4,video/3gpp,video/quicktime']")
+    #     input_file.send_keys(caminho_imagem)
+    #     sleep(2)  # Espera o upload da imagem
+        
         # Confirmar o envio da mensagem (pressionando Enter)
-        navegador.find_element(By.XPATH, "//span[@data-icon='send']").click()
-        sleep(3)
+        # navegador.find_element(By.XPATH, "//span[@data-icon='send']").click()
+        # sleep(3)
 
         print(f"Mensagem enviada para {nome} com sucesso!")
         sleep(1)  # Tempo para evitar problemas com o envio contínuo
