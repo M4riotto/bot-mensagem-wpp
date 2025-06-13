@@ -4,10 +4,11 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 # Carregar a planilha com os dados
-dados = pd.read_excel("./Lista de entrada Encontro de Empresários..xlsx")  # Altere para o caminho da sua planilha
+dados = pd.read_excel("./leads fulltimeexperience.xlsx")  # Altere para o caminho da sua planilha
 
 # Caminho da imagem que você quer enviar
-caminho_imagem = r"C:\Users\vitor\Downloads\imagem-teste.png"  # Use 'r' para lidar corretamente com caminhos no Windows
+caminho_imagem = r"C:\xampp\htdocs\bot-mensagem-wpp\img2.jpg"  # Use 'r' para lidar corretamente com caminhos no Windows
+
 
 # Inicializar o navegador uma vez
 navegador = webdriver.Chrome()  # Caminho do driver, se necessário
@@ -20,7 +21,8 @@ for index, row in dados.iterrows():
     telefone = row['Telefone']
 
     # Mensagem personalizada
-    mensagem = f"Olá {nome}, esta é uma mensagem automática com uma imagem."
+    mensagem = f"Olá {nome}%0A%0A✨Gratuito com vagas Limitadas!✨%0A%0AFaça sua inscrição agora e venha participar dessa experiência de conexão, desenvolvimento e expansão de negócios e mentalidade.%0A%0ASaiba mais:%0A🔗 https://fulltimenetworking.com.br/experience/%0A%0AAtt.%0ACássio Moreira%0AFulltime Networking"
+
 
     try:
         # Abrir conversa no WhatsApp Web
@@ -32,18 +34,18 @@ for index, row in dados.iterrows():
         sleep(2)
 
         # 1. Clique no ícone de anexar (mais) para abrir o menu de opções
-    #     anexo = navegador.find_element(By.XPATH, "//span[@data-icon='plus']")
-    #     anexo.click()
-    #     sleep(1)  # Aguarde o menu abrir
+        anexo = navegador.find_element(By.XPATH, "//span[@data-icon='plus']")
+        anexo.click()
+        sleep(1)  # Aguarde o menu abrir
 
     #    # 3. Localizar o campo de upload e enviar a imagem
-    #     input_file = navegador.find_element(By.XPATH, "//input[@accept='image/*,video/mp4,video/3gpp,video/quicktime']")
-    #     input_file.send_keys(caminho_imagem)
-    #     sleep(2)  # Espera o upload da imagem
+        input_file = navegador.find_element(By.XPATH, "//input[@accept='image/*,video/mp4,video/3gpp,video/quicktime']")
+        input_file.send_keys(caminho_imagem)
+        sleep(2)  # Espera o upload da imagem
         
         # Confirmar o envio da mensagem (pressionando Enter)
-        # navegador.find_element(By.XPATH, "//span[@data-icon='send']").click()
-        # sleep(3)
+        navegador.find_element(By.XPATH, "//span[@data-icon='send']").click()
+        sleep(3)
 
         print(f"Mensagem enviada para {nome} com sucesso!")
         sleep(1)  # Tempo para evitar problemas com o envio contínuo
