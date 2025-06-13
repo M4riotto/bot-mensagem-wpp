@@ -21,7 +21,8 @@ for index, row in dados.iterrows():
     telefone = row['Telefone']
 
     # Mensagem personalizada
-    mensagem = f"Olá {nome}%0A%0A✨Gratuito com vagas Limitadas!✨%0A%0AFaça sua inscrição agora e venha participar dessa experiência de conexão, desenvolvimento e expansão de negócios e mentalidade.%0A%0ASaiba mais:%0A🔗 https://fulltimenetworking.com.br/experience/%0A%0AAtt.%0ACássio Moreira%0AFulltime Networking"
+    # mensagem = f"Olá {nome}%0A%0A✨Gratuito com vagas Limitadas!✨%0A%0AFaça sua inscrição agora e venha participar dessa experiência de conexão, desenvolvimento e expansão de negócios e mentalidade.%0A%0ASaiba mais:%0A🔗 https://fulltimenetworking.com.br/experience/%0A%0AAtt.%0ACássio Moreira%0AFulltime Networking"
+    mensagem = f"{nome}%0A%0A🌟 Convite Especial 🌟%0A%0ANo dia 18/06 as 19hs, Empresários e Empreendedores estarão reunidos no 2° Fulltime Networking Experience em Caraguatatuba-SP.%0A%0AUma noite exclusiva de conexões estratégicas, negócios e crescimento.%0A%0AVenha fazer parte desse ambiente.%0A%0A🎯 Vagas limitadas!%0AGaranta a sua participação  gratuita agora mesmo clicando no link abaixo.%0A%0A🔗 https://fulltimenetworking.com.br/experience"
 
 
     try:
