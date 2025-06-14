@@ -1,0 +1,23 @@
+2025/06/13-21:23:35.198 44dc Reusing MANIFEST C:\xampp\htdocs\testeMessage\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/06/13-21:23:35.203 44dc Recovering log #175
+2025/06/13-21:23:35.204 44dc Reusing old log C:\xampp\htdocs\testeMessage\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000175.log 
+2025/06/13-21:23:35.205 44dc Delete type=2 #165
+2025/06/13-21:23:35.205 44dc Delete type=2 #166
+2025/06/13-21:23:35.205 44dc Delete type=2 #167
+2025/06/13-21:23:35.205 44dc Delete type=2 #168
+2025/06/13-21:23:36.567 44dc Level-0 table #183: started
+2025/06/13-21:23:36.579 44dc Level-0 table #183: 18641 bytes OK
+2025/06/13-21:23:36.587 44dc Delete type=0 #175
+2025/06/13-21:23:36.592 fc0 Manual compaction at level-0 from '\x00/\x00\x00\x00' @ 72057594037927935 : 1 .. '\x000\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/06/13-21:23:37.843 4f04 Compacting 1@1 + 4@2 files
+2025/06/13-21:23:38.162 4f04 Generated table #184@1: 49063 keys, 2212198 bytes
+2025/06/13-21:23:38.226 4f04 Generated table #185@1: 16681 keys, 2177723 bytes
+2025/06/13-21:23:38.307 4f04 Generated table #186@1: 67455 keys, 2212639 bytes
+2025/06/13-21:23:38.338 4f04 Generated table #187@1: 15644 keys, 368445 bytes
+2025/06/13-21:23:38.338 4f04 Compacted 1@1 + 4@2 files => 6971005 bytes
+2025/06/13-21:23:38.340 4f04 compacted to: files[ 0 0 4 0 0 0 0 ]
+2025/06/13-21:23:38.340 4f04 Delete type=2 #177
+2025/06/13-21:23:38.341 4f04 Delete type=2 #178
+2025/06/13-21:23:38.341 4f04 Delete type=2 #179
+2025/06/13-21:23:38.341 4f04 Delete type=2 #180
+2025/06/13-21:23:38.341 4f04 Delete type=2 #183
